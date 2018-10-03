@@ -1,0 +1,39 @@
+#pickGenre{
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#songBox{
+    border: solid black 3px;
+    text-align: center;
+}
+#title{
+    border: solid black 1px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#Submit {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #555555;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 6px #999;
+}
+
+#Submit:hover {
+    background-color: #555555;
+    color: white;
+}
+#Submit:active {
+    background-color: #555555;
+    box-shadow: 0 2px black;
+    transform: translateY(3px);
+  }

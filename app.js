@@ -7,28 +7,33 @@ window.onload = function() {
 
 
     let dataDiv = document.querySelector('#data');
-        
     form.addEventListener('submit', function(event){ 
+    event.preventDefault();
+    container.innerHTML = data.filter((filter) => {
 
-     event.preventDefault();
-
-     container.innerHTML = data.filter((filter) => {
-
-         console.log('genre', genre.value);
-
+        console.log('genre', genre.value);
         return filter.genre === genre.value;
+
     })
-    
+
 
     .map((val) => {
 
         return `
-
-        <h1>${val.song}</h1>
-
+        <div id = "songBox">
+            <div id = "title">
+                <h2>${val.song}</h2>
+            </div>
+            <img src=${val.image} width="250" height="auto">
+            <h3>${val.artist}</h3>
+            <br>
+            <br>
+            <h5>(${val.genre})</h5>
+        </div>
         `
-    });
 
+    })
+    .join("");
     });
     
 }

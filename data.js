@@ -1,10 +1,10 @@
 const data = [
 ///----------------------------------------1
-{
-    artist: 'AJR',
-    genre: 'Pop',
-    song: 'Bud Like You',
-    image: "https://i.ytimg.com/vi/3qce2Z4nlVs/maxresdefault.jpg"
+  {
+      artist: 'AJR',
+      genre: 'Pop',
+      song: 'Bud Like You',
+      image: "https://i.ytimg.com/vi/3qce2Z4nlVs/maxresdefault.jpg"
   },
   {
       artist: 'Gym Class Heros',
@@ -37,11 +37,11 @@ const data = [
       image: "https://i.ytimg.com/vi/3qce2Z4nlVs/maxresdefault.jpg"
   },
 ///----------------------------------------2
-{
-    artist: 'The Beatles',
-    genre: 'Rock',
-    song: 'Ob-la-di Ob-la-da',
-    image: "https://images-na.ssl-images-amazon.com/images/I/316GrhxGleL._SY355_.jpg"
+  {
+      artist: 'The Beatles',
+      genre: 'Rock',
+      song: 'Ob-la-di Ob-la-da',
+      image: "https://images-na.ssl-images-amazon.com/images/I/316GrhxGleL._SY355_.jpg"
   },
   {
       artist: 'Queen',
