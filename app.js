@@ -1,30 +1,34 @@
-const musicArea = document.querySelector("#music");
-const form = document.querySelector("#form")
-const formAnsPop = document.querySelector("#Pop");
-const formAnsRock = document.querySelector("#Rock");
-let currentGenre;
-
-
-formAnsRock.addEventListener("click", () => {
-    currentGenre = "Rock"
-    console.log(currentGenre);
-})
-const HTMLtemplateBuilder = formAnsPop.addEventListener("click", () => {
-    currentGenre = "Pop";
+window.onload = function() {
+    const form = document.querySelector('#form');
+    const genre = document.querySelector('#genre');
+    const container = document.querySelector("#container");
     
-return data.filter((genre) => {
-    return genre.genre === currentGenre; 
-}).map((genre) => {
-    return `
-        <h1>${genre.song}</h1>
-        <h2>${genre.artist}</h2>
-        <img src="${genre.image}">
-        <h2>${genre.genre}</h2>
-    `
-}).join(""); 
-})
-console.log(HTMLtemplateBuilder);
+    console.log(data);
 
 
+    let dataDiv = document.querySelector('#data');
+        
+    form.addEventListener('submit', function(event){ 
 
-musicArea.innerHTML = HTMLtemplateBuilder;
+     event.preventDefault();
+
+     container.innerHTML = data.filter((filter) => {
+
+         console.log('genre', genre.value);
+
+        return filter.genre === genre.value;
+    })
+    
+
+    .map((val) => {
+
+        return `
+
+        <h1>${val.song}</h1>
+
+        `
+    });
+
+    });
+    
+}
